@@ -1,0 +1,31 @@
+/* // der geht 
+
+
+curl -u stefan.fritzsche:K4rn4v4l \ 
+-H 'Access-Control-Request-Method: GET' \
+https://dev-disneystreaming.dpx-automation-services.com/authoring/test 
+
+// der geht nicht 
+
+curl -u stefan.fritzsche:K4rn4v4l \ 
+-i -X OPTIONS -H "Origin: https://alto.dpx-automation-services.com" \ 
+-H 'Access-Control-Request-Method:GET' \ 
+https://dev-disneystreaming.dpx-automation-services.com/authoring/test */
+
+/* curl -u stefan.fritzsche:K4rn4v4l \ 
+-H 'Access-Control-Request-Method: PUT' \
+-H 'Content-Type: application/json' \ 
+-d '{"id":"test","meta":{"subject":{"DE_de":"Test Dev","UK_en-gb":"Test Dev"},"preheader":{"DE_de":"Preheader Dev","UK_en-gb":"xxx"},"claravine":{"DE_de":"CLRVNE","UK_en-gb":"dss-Disneyplus-email-83KKL9VU3M"},"businessUnit":"emea"},"envelope":{},"modules":[{"module":"Content_E3_1up","content":{"themeColor":"black","hidden":{"DE_de":false,"UK_en-gb":false},"headline":{"DE_de":"headline","UK_en-gb":""},"image":{"DE_de":{"src":"https://image.mail.disneyplus.com/lib/fe4415707564067f751773/m/3/d22ed484-e5d9-4a07-9ae3-cbf772610e36.png","alt":"placeholderw:480 h:200-600","cta":{"link":"https://www.disneyplus.com/","label":"","alias":"alias","disableAdobeParams":false}},"UK_en-gb":{"src":"","alt":"","cta":null}},"body":{"DE_de":"test","UK_en-gb":""},"imageAddToWatchlist":{"DE_de":{"link":"https://www.disneyplus.com/","label":"test","alias":"alias","disableAdobeParams":false},"UK_en-gb":{"link":"","label":"","alias":"","disableAdobeParams":false}}}}],"markets":["DE_de","UK_en-gb"]}' \ 
+https://dev-disneystreaming.dpx-automation-services.com/authoring 
+
+curl -u stefan.fritzsche:K4rn4v4l \
+-H 'Access-Control-Request-Method: PUT' \
+-H 'Content-Type: application/json' \
+-d '{"id": "test","meta": {"subject": {"DE_de": "Test3"},"preheader": {"DE_de": "Test3"},"claravine": {"DE_de": "CLRVNE3"},"businessUnit": "emea"},"envelope": {},"modules": [],"markets": ["DE_de"]}' \
+https://dev-disneystreaming.dpx-automation-services.com/authoring
+
+curl -u stefan.fritzsche:K4rn4v4l \ 
+-i -X OPTIONS -H "Origin: https://alto.dpx-automation-services.com" \ 
+-H 'Access-Control-Request-Method: PUT' \ 
+-H "Content-Type: application/json" \ -d '{"id": "test","meta": {"subject": {"DE_de": "Test3"},"preheader": {"DE_de": "Test3"},"claravine": {"DE_de": "CLRVNE3"},"businessUnit": "emea"},"envelope": {},"modules": [],"markets": ["DE_de"]}' \
+https://dev-disneystreaming.dpx-automation-services.com/authoring*/ 

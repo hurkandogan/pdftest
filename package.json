@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.6",
+    "multer": "^1.4.4",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdf-parser": "^1.0.5",
+    "pdf2json": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --ignore 'frontend/' -L server.js"
+  },
+  "name": "hdblog",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
